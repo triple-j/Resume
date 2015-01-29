@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd"> 
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>Jeremie J. Jarosh's Resume</title>
+  <style type="text/css">
+    body { 
+        background-color: #ffffff; 
+        color:          #000000; 
+        line-height:    1.33em;
+        font-family:    "FreeSerif","Times New Roman",
+                        "Nimbus Roman No9 L",Times,Serif; 
+    }
+    #header     { text-align:center; padding-top:1em; }
+    #name       { margin-bottom:4px; font-size:22pt; }
+    #info       { font-size:10pt; line-height:1.12em; }
+    .items      { font-size:11pt; margin-bottom:1.75em; }
+    .items p    { margin-top:0px; }
+    .items dt {
+        font-size:      13pt;
+        font-style:     italic;
+        padding-left:   2pt;
+        border-bottom:  thin solid #808080;
+        margin-bottom:  2pt;
+    }
+    .edu-name,
+    .tech-name,
+    .employ-name    { font-weight:bold; font-size:12pt; }
+    .employ-date    { float:right; margin-right:3em; }
+    .employ-job     { font-style:italic; }
+    #technical p { 
+        margin-right:3em; 
+        padding-left: 1.5em; 
+        text-indent: -1.5em; 
+    }
+    #employment p   { margin-bottom:0px; }
+    #employment ul { 
+        margin-top:     0px; 
+        margin-right:   6em; 
+        font-size:      10pt; 
+        line-height:    1.12em; 
+        margin-bottom:  1em; 
+    }
+  </style>
+  <script type="text/javascript">
+    /** VARIABLES ****/
+    var author = "Jeremie J. Jarosh";
+    var addressStreet = "1432 Quebec Avenue N.";
+    var addressCity = "Golden Valley, MN 55427";
+    var phone = "(612) 803-3747";
+    var email = "Jeremie@Jarosh.org";
+   
+    // Education
+    var education = { "schools": [ 
+        { "school": "Minnesota School of Business",
+          "location": "Plymouth, MN", "gradDate": "2008",
+          "certificate": "A.A.S. Programming and Game Development" }
+    ] };
+   
+    // Technical Skills
+    var technical = { "skillz": [ 
+        { "type": "Applications",
+          "items": [
+            "Adobe Photoshop", "GIMP (GNU Image Manipulation Program)", 
+            "Flash MX", "MS Access", "MS Office", "OpenOffice.org",
+            "MS Visual Studio", "Dev C++", "3D Studio Max"
+          ] },
+        { "type": "Programming",
+          "items": [
+            "HTML", "JavaScript", "PHP", "SQL", "Java", "Python", "Bash", 
+            "C", "C++", "Visual Basic"
+          ] },
+        { "type": "Frameworks",
+          "items": [
+            "CakePHP", "pmWiki", "jQuery"
+          ] }
+    ] };
+   
+    // Employment
+    var employment = { "jobs": [ 
+        { "company": "Davanni&rsquo;s",
+          "location": "Golden Valley, MN", 
+          "date": "September 2001 - Present",
+          "title": "Kitchen Worker",
+          "roles": [
+            "Take food orders from customers", 
+            "Prepare food items such as pizzas, hoagies, salads, etc.", 
+            "Answer incoming calls", 
+            "Provide customer service", 
+            "Clean and organize eating and service areas" 
+          ] },
+        { "company": "A FOX Consulting & Design",
+          "location": "Plymouth, MN", 
+          "date": "August 2002",
+          "title": "Graphic Designer ",
+          "roles": [
+            "Used photo manipulation to create an image to be displayed in the \
+             background of their &ldquo;Swipe 'N' Go&rdquo; program", 
+            "Created an animated GIF to be used to show when the &ldquo;Swipe \
+             'N' Go&rdquo; program is &ldquo;thinking&rdquo;", 
+            "Designed application icons for the &ldquo;Swipe 'N' Go&rdquo; \
+             program" 
+          ] },
+        { "company": "Money Centers of America",
+          "location": "King of Prussia, PA", 
+          "date": "March 2003",
+          "title": "Graphic Designer",
+          "roles": [
+            "Created replacement start-up logos for Windows 98 and OS/2 \
+             platforms", 
+            "Converted logo to Animated and Static AVI" 
+          ] },
+        { "company": "Money Centers of America",
+          "location": "King of Prussia, PA", 
+          "date": "March 2004",
+          "title": "Graphic Designer",
+          "roles": [
+            "Stitched together and re-sized images for use as backgrounds for \
+             the &ldquo;Swipe 'N' Go&rdquo; program"
+          ] },
+        { "company": "Travelers Country Club #1",
+          "location": "Clear Lake, MN", 
+          "date": "January 2010 - October 2010",
+          "title": "Web Developer",
+          "roles": [
+            "Redesign website layout and graphics", 
+            "Design and populate database", 
+            "Create user based Content management using CakePHP"
+          ] }
+    ] };
+  </script>
+ </head>
+ <body>
+  <div id="header">
+   <!--h1 id="name">Jeremie J. Jarosh</h1-->
+   <h1 id="name">
+    <script type="text/javascript">document.write(author);</script>
+   </h1>
+   <div id="info">
+    <!--div id="address">
+     <script type="text/javascript">document.write(addressStreet+"<br>"+addressCity);</script>
+    </div>
+    <div id="phone">
+     <script type="text/javascript">document.write(phone);</script>
+    </div>
+    <div id="email">
+     <script type="text/javascript">document.write(email);</script>
+    </div-->
+    <div id="test" style="margin-top:1em;">
+     <script type="text/javascript">
+        document.write(addressStreet+" &mdash; ");
+        document.write(addressCity+" &mdash; ");
+        document.write(phone+" &mdash; ");
+        document.write(email);
+     </script>
+    </div>
+   </div>
+  </div>
+  <dl id="education" class="items">
+   <dt>Education</dt>
+   <dd>
+    <script type="text/javascript">
+     for( var i = 0; i < education.schools.length; i++ ) {
+        document.write( "<p>" );
+        document.write( "<span class=\"edu-name\">"
+                        +education.schools[i].certificate+"</span>, " );
+        document.write( education.schools[i].gradDate+"<br>" );
+        document.write( education.schools[i].school+", " );
+        document.write( education.schools[i].location );
+        document.write( "</p>" );
+     }
+    </script>
+   </dd>
+  </dl>
+  <dl id="technical" class="items">
+   <dt>Technical Skills</dt>
+   <dd>
+    <script type="text/javascript">
+     for( var i = 0; i < technical.skillz.length; i++ ) {
+        document.write( "<p>" );
+        document.write( "<span class=\"tech-name\">"
+                        +technical.skillz[i].type+"</span> &mdash; " );
+        var list = "";
+        for( j in technical.skillz[i].items ) {
+            var span = ", <span style=\"white-space:nowrap;\">"
+            list = list+span+technical.skillz[i].items[j]+"</span>";
+        }
+        document.write( list.substring(2) );
+        document.write( "</p>" );
+     }
+    </script>
+   </dd>
+  </dl>
+  <dl id="employment" class="items">
+   <dt>Employment</dt>
+   <dd>
+    <script type="text/javascript">
+     for( var i = 0; i < employment.jobs.length; i++ ) {
+        document.write( "<p>" );
+        document.write( "<span class=\"employ-date\">"
+                        +employment.jobs[i].date+"</span>" );
+        document.write( "<span class=\"employ-name\">"
+                        +employment.jobs[i].company+"</span>" );
+        document.write( ", "+employment.jobs[i].location+"<br>" );
+        document.write( "<span class=\"employ-job\">"
+                        +employment.jobs[i].title+"</span>" );
+        document.write( "</p>" );
+        document.write( "<ul>" );
+        for( j in employment.jobs[i].roles ) {
+            document.write( "<li>"+employment.jobs[i].roles[j]+"</li>" );
+        }
+        document.write( "</ul>" );
+     }
+    </script>
+   </dd>
+  </dl>
+ </body>
+</html>
