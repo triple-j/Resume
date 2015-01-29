@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
   <title>Jeremie J. Jarosh's Resume</title>
   <style type="text/css">
+    /* set up font */
     body { 
         background-color: #ffffff; 
         color:          #000000; 
@@ -12,36 +13,45 @@
         font-family:    "FreeSerif","Times New Roman",
                         "Nimbus Roman No9 L",Times,Serif; 
     }
-    #header     { text-align:center; padding-top:1em; }
+    
+    /* set up formating */
+    #header     { text-align:center; padding:1em 0 1em; }
     #name       { margin-bottom:4px; font-size:22pt; }
-    #info       { font-size:10pt; line-height:1.12em; }
-    .items      { font-size:11pt; margin-bottom:1.75em; }
-    .items p    { margin-top:0px; }
-    .items dt {
+    #info       { font-size:10pt; line-height:1.12em; font-weight:normal; }
+    .article      { font-size:11pt; margin-bottom:1.75em; width:100%; }
+    .article p    { margin-top:0px; }
+    .article .header {
+        text-align:     left;
         font-size:      13pt;
         font-style:     italic;
+        font-weight:    normal;
         padding-left:   2pt;
         border-bottom:  thin solid #808080;
         margin-bottom:  2pt;
     }
+    .article .section { padding:0 3em; }
+    .name,
     .edu-name,
     .tech-name,
     .employ-name    { font-weight:bold; font-size:12pt; }
-    .employ-date    { float:right; margin-right:3em; }
+    .employ-date    { float:right; /*margin-right:3em;*/ }
     .employ-job     { font-style:italic; }
-    #technical p { 
-        margin-right:3em; 
+    .indent p { 
+        /*margin-right:3em; */
         padding-left: 1.5em; 
         text-indent: -1.5em; 
     }
     #employment p   { margin-bottom:0px; }
     #employment ul { 
         margin-top:     0px; 
-        margin-right:   6em; 
+        margin-right:   3em; 
         font-size:      10pt; 
         line-height:    1.12em; 
         margin-bottom:  1em; 
     }
+    
+    /* used to keep items from splitting between pages */
+    #employment .item:last-of-type { page-break-before:always; }
   </style>
   <script type="text/javascript">
     /** VARIABLES ****/
@@ -49,7 +59,7 @@
     var addressStreet = "1432 Quebec Avenue N.";
     var addressCity = "Golden Valley, MN 55427";
     var phone = "(612) 803-3747";
-    var email = "Jeremie@Jarosh.org";
+    var email = "Jeremie&#64;Jarosh.org";
    
     // Education
     var education = { "schools": [ 
@@ -79,6 +89,49 @@
    
     // Employment
     var employment = { "jobs": [ 
+        { "company": "Travelers Country Club #1",
+          "location": "Clear Lake, MN", 
+          "date": "January 2010 - October 2010",
+          "title": "Web Developer",
+          "roles": [
+            "Rebuilt website from the ground up, not including content, using CakePHP",
+            "Redesigned website layout and graphics, and implemented it in HTML", 
+            "Designed and populated database", 
+            "Allowed user modification of select pages through log-in",
+            "Created a log-in system that allows access to pages based on individual user permissions",
+            "Imported CSV formatted Member Directory into database",
+            "Programmed the site to export Member Directory in CSV format to be used with external program"
+          ] },
+        { "company": "Money Centers of America",
+          "location": "King of Prussia, PA", 
+          "date": "<small>(1 day)</small>&nbsp; March 2004",
+          "title": "Graphic Designer",
+          "roles": [
+            "Stitched together and re-sized images for use as backgrounds for \
+             the &ldquo;Swipe 'N' Go&rdquo; program"
+          ] },
+        { "company": "Money Centers of America",
+          "location": "King of Prussia, PA", 
+          "date": "<small>(3 days)</small>&nbsp; March 2003",
+          "title": "Graphic Designer",
+          "roles": [
+            "Created replacement start-up logos for Windows 98 and OS/2 \
+             platforms", 
+            "Converted logo to Animated and Static AVI" 
+          ] },
+        { "company": "A FOX Consulting & Design",
+          "location": "Plymouth, MN", 
+          "date": "<small>(1 Week)</small>&nbsp; August 2002",
+          "title": "Graphic Designer ",
+          "roles": [
+            "Used photo manipulation to create an image depicting the boss as \
+             a cartoon thief with mask and money bag to be displayed as the \
+             background of their &ldquo;Swipe 'N' Go&rdquo; program", 
+            "Created an animated GIF to be used to show when the &ldquo;Swipe \
+             'N' Go&rdquo; program is &ldquo;thinking&rdquo;", 
+            "Designed application icons for the &ldquo;Swipe 'N' Go&rdquo; \
+             program" 
+          ] },
         { "company": "Davanni&rsquo;s",
           "location": "Golden Valley, MN", 
           "date": "September 2001 - Present",
@@ -89,64 +142,20 @@
             "Answer incoming calls", 
             "Provide customer service", 
             "Clean and organize eating and service areas" 
-          ] },
-        { "company": "A FOX Consulting & Design",
-          "location": "Plymouth, MN", 
-          "date": "August 2002",
-          "title": "Graphic Designer ",
-          "roles": [
-            "Used photo manipulation to create an image to be displayed in the \
-             background of their &ldquo;Swipe 'N' Go&rdquo; program", 
-            "Created an animated GIF to be used to show when the &ldquo;Swipe \
-             'N' Go&rdquo; program is &ldquo;thinking&rdquo;", 
-            "Designed application icons for the &ldquo;Swipe 'N' Go&rdquo; \
-             program" 
-          ] },
-        { "company": "Money Centers of America",
-          "location": "King of Prussia, PA", 
-          "date": "March 2003",
-          "title": "Graphic Designer",
-          "roles": [
-            "Created replacement start-up logos for Windows 98 and OS/2 \
-             platforms", 
-            "Converted logo to Animated and Static AVI" 
-          ] },
-        { "company": "Money Centers of America",
-          "location": "King of Prussia, PA", 
-          "date": "March 2004",
-          "title": "Graphic Designer",
-          "roles": [
-            "Stitched together and re-sized images for use as backgrounds for \
-             the &ldquo;Swipe 'N' Go&rdquo; program"
-          ] },
-        { "company": "Travelers Country Club #1",
-          "location": "Clear Lake, MN", 
-          "date": "January 2010 - October 2010",
-          "title": "Web Developer",
-          "roles": [
-            "Redesign website layout and graphics", 
-            "Design and populate database", 
-            "Create user based Content management using CakePHP"
           ] }
     ] };
   </script>
  </head>
  <body>
-  <div id="header">
-   <!--h1 id="name">Jeremie J. Jarosh</h1-->
+ 
+<table>
+ <!-- using table header to make page header when printed -->
+ <thead><tr><th id="header">
+ 
    <h1 id="name">
     <script type="text/javascript">document.write(author);</script>
    </h1>
    <div id="info">
-    <!--div id="address">
-     <script type="text/javascript">document.write(addressStreet+"<br>"+addressCity);</script>
-    </div>
-    <div id="phone">
-     <script type="text/javascript">document.write(phone);</script>
-    </div>
-    <div id="email">
-     <script type="text/javascript">document.write(email);</script>
-    </div-->
     <div id="test" style="margin-top:1em;">
      <script type="text/javascript">
         document.write(addressStreet+" &mdash; ");
@@ -156,13 +165,17 @@
      </script>
     </div>
    </div>
-  </div>
-  <dl id="education" class="items">
-   <dt>Education</dt>
-   <dd>
+  
+ </th></tr></thead>
+ <tbody><tr><td>  
+  
+  <table id="education" class="article">
+   <!-- use more table headers in case articles flow to next page -->
+   <thead><tr><th class="header">Education</th></tr></thead>
+   <tbody><tr><td class="section">
     <script type="text/javascript">
      for( var i = 0; i < education.schools.length; i++ ) {
-        document.write( "<p>" );
+        document.write( "<p class=\"item\">" );
         document.write( "<span class=\"edu-name\">"
                         +education.schools[i].certificate+"</span>, " );
         document.write( education.schools[i].gradDate+"<br>" );
@@ -171,14 +184,15 @@
         document.write( "</p>" );
      }
     </script>
-   </dd>
-  </dl>
-  <dl id="technical" class="items">
-   <dt>Technical Skills</dt>
-   <dd>
+   </td></tr></tbody>
+  </table>
+  
+  <table id="technical" class="article indent">
+   <thead><tr><th class="header">Technical Skills</th></tr></thead>
+   <tbody><tr><td class="section">
     <script type="text/javascript">
      for( var i = 0; i < technical.skillz.length; i++ ) {
-        document.write( "<p>" );
+        document.write( "<p class=\"item\">" );
         document.write( "<span class=\"tech-name\">"
                         +technical.skillz[i].type+"</span> &mdash; " );
         var list = "";
@@ -190,13 +204,15 @@
         document.write( "</p>" );
      }
     </script>
-   </dd>
-  </dl>
-  <dl id="employment" class="items">
-   <dt>Employment</dt>
-   <dd>
+   </td></tr></tbody>
+  </table>
+  
+  <table id="employment" class="article">
+   <thead><tr><th class="header">Employment</th></tr></thead>
+   <tbody><tr><td class="section">
     <script type="text/javascript">
      for( var i = 0; i < employment.jobs.length; i++ ) {
+        document.write( "<div class=\"item\">" );
         document.write( "<p>" );
         document.write( "<span class=\"employ-date\">"
                         +employment.jobs[i].date+"</span>" );
@@ -211,9 +227,26 @@
             document.write( "<li>"+employment.jobs[i].roles[j]+"</li>" );
         }
         document.write( "</ul>" );
+        document.write( "</div>" );
      }
     </script>
-   </dd>
-  </dl>
+   </td></tr></tbody>
+  </table>
+  
+  <table id="personal" class="article indent">
+   <thead><tr><th class="header">Personal Projects</th></tr></thead>
+   <tbody><tr><td class="section">
+    <p class="item"><span class="name">Siloa Creek</span> &mdash;
+     I am setting up a website for my father's bluegrass/gospel band Siloa Creek.  Using PmWiki as a CMS for that, which has required me to create some recipes/plug-ins to add media features to PmWiki.  I have written or am in the process of writing plug-ins that allow the resizing of images, displaying a gallery using FancyBox, uploading of multiple file at once, and integrating an audio player.
+    </p>
+    <p class="item"><span class="name">Heavy<em>er</em>Ink</span> &mdash;
+     It is a third-party modification of the website HeavyInk.com, an online comic book store.  To get a better understanding of MVC and PHP, I've begun to create a MVC based site from scratch(no framework used).  The modification adds features to the existing site like a budget calculator, a redesigned interface, on-site RSS reader, and more.  I am accessing the data from the original site using their limited JSON API as well as scraping pages using Curl, XPath, and Regular Expressions. 
+    </p>
+   </td></tr></tbody>
+  </table>
+  
+ </td></tr></tbody>
+</table>
+  
  </body>
 </html>
