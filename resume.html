@@ -9,31 +9,32 @@
     body { 
         background-color: #ffffff; 
         color:          #000000; 
-        line-height:    1.33em;
+        font-size:      12px;
+        line-height:    1.33;
         font-family:    "FreeSerif","Times New Roman",
                         "Nimbus Roman No9 L",Times,Serif; 
     }
     
     /* set up formating */
     #header     { text-align:center; padding:1em 0 1em; }
-    #name       { margin-bottom:4px; font-size:22pt; }
-    #info       { font-size:10pt; line-height:1.12em; font-weight:normal; }
-    .article      { font-size:11pt; margin-bottom:1.75em; width:100%; }
+    #name       { margin-bottom:4px; font-size:1.83em; }
+    #info       { font-size:0.83em; line-height:1.12; font-weight:normal; }
+    .article      { font-size:0.92em; margin-bottom:1.75; width:100%; }
     .article p    { margin-top:0px; }
     .article .header {
         text-align:     left;
-        font-size:      13pt;
+        font-size:      1.08em;
         font-style:     italic;
         font-weight:    normal;
-        padding-left:   2pt;
+        padding-left:   0.17em;
         border-bottom:  thin solid #808080;
-        margin-bottom:  2pt;
+        margin-bottom:  0.17em;
     }
     .article .section { padding:0 3em; }
     .name,
     .edu-name,
     .tech-name,
-    .employ-name    { font-weight:bold; font-size:12pt; }
+    .employ-name    { font-weight:bold; font-size:1em; }
     .employ-date    { float:right; /*margin-right:3em;*/ }
     .employ-job     { font-style:italic; }
     .indent p { 
@@ -45,19 +46,19 @@
     #employment ul { 
         margin-top:     0px; 
         margin-right:   3em; 
-        font-size:      10pt; 
-        line-height:    1.12em; 
+        font-size:      0.83em; 
+        line-height:    1.12; 
         margin-bottom:  1em; 
     }
     
     /* used to keep items from splitting between pages */
-    #employment .item:last-of-type { page-break-before:always; }
+    /*#employment .item:last-of-type { page-break-before:always; }*/
   </style>
   <script type="text/javascript">
     /** VARIABLES ****/
     var author = "Jeremie J. Jarosh";
-    var addressStreet = "1432 Quebec Avenue N.";
-    var addressCity = "Golden Valley, MN 55427";
+    var addressStreet = "3812 Toledo Avenue N.";
+    var addressCity = "Robbinsdale, MN 55422";
     var phone = "(612) 803-3747";
     var email = "Jeremie&#64;Jarosh.org";
    
@@ -72,23 +73,46 @@
     var technical = { "skillz": [ 
         { "type": "Applications",
           "items": [
-            "Adobe Photoshop", "GIMP (GNU Image Manipulation Program)", 
-            "Flash MX", "MS Access", "MS Office", "OpenOffice.org",
-            "MS Visual Studio", "Dev C++", "3D Studio Max"
+            "Adobe Photoshop", 
+            "GIMP (GNU Image Manipulation Program)", 
+            "Fireworks", 
+            "GIT"
           ] },
         { "type": "Programming",
           "items": [
-            "HTML", "JavaScript", "PHP", "SQL", "Java", "Python", "Bash", 
-            "C", "C++", "Visual Basic"
+            "HTML", 
+            "CSS", 
+            "JavaScript", 
+            "PHP", 
+            "SQL", 
+            "Bash", 
+            "Python", 
+            "Java"
           ] },
         { "type": "Frameworks",
           "items": [
-            "CakePHP", "pmWiki", "jQuery"
+            "jQuery", 
+            "Sass", 
+            "CakePHP", 
+            "OSCommerce", 
+            "CMS Made Simple", 
+            "pmWiki"
           ] }
     ] };
    
     // Employment
     var employment = { "jobs": [ 
+        { "company": "Ecreativeworks",
+          "location": "Plymouth, MN", 
+          "date": "December 2011 - Present",
+          "title": "Web Developer",
+          "roles": [
+            "Built multiple websites using a proprietary version of OSCommerce and CMS Made Simple",
+            "Maintained the company's proprietary version of OSCommerce",
+            "Improved and created internal programs to streamline development",
+            "Facilitated the use of GIT to track changes to sites and insure the developers were working on code identical to what was on the live servers",
+            "Built scripts to allow live sites to be updated through a GIT Push"
+          ] },
         { "company": "Travelers Country Club #1",
           "location": "Clear Lake, MN", 
           "date": "January 2010 - October 2010",
@@ -131,17 +155,6 @@
              'N' Go&rdquo; program is &ldquo;thinking&rdquo;", 
             "Designed application icons for the &ldquo;Swipe 'N' Go&rdquo; \
              program" 
-          ] },
-        { "company": "Davanni&rsquo;s",
-          "location": "Golden Valley, MN", 
-          "date": "September 2001 - Present",
-          "title": "Kitchen Worker",
-          "roles": [
-            "Take food orders from customers", 
-            "Prepare food items such as pizzas, hoagies, salads, etc.", 
-            "Answer incoming calls", 
-            "Provide customer service", 
-            "Clean and organize eating and service areas" 
           ] }
     ] };
   </script>
