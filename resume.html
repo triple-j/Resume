@@ -82,59 +82,6 @@
     /* used to keep items from splitting between pages */
     /*#employment .item:last-of-type { page-break-before:always; }*/
   </style>
-  <script type="text/javascript">
-    /** VARIABLES ****/
-    var author = "Jeremie J. Jarosh";
-    var addressStreet = "3812 Toledo Avenue N.";
-    var addressCity = "Robbinsdale, MN 55422";
-    var phone = "(612) 803-3747";
-    var email = "Jeremie&#64;Jarosh.org";
-
-    // Education
-    var education = { "schools": [
-        { "school": "Minnesota School of Business",
-          "location": "Plymouth, MN", "gradDate": "2008",
-          "certificate": "A.A.S. Programming and Game Development" }
-    ] };
-
-    // Technical Skills
-    var technical = { "skillz": [
-        { "type": "Languages",
-          "items": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "MySQL",
-            "Bash (Shell Scripting)",
-            "Python",
-            "Java"
-          ] },
-        { "type": "Concepts",
-          "items": [
-            "Responsive design/Mobile Development",
-            "AJAX",
-            "Version Control",
-            "MVC (Model-view-controller)"
-          ] },
-        { "type": "Frameworks",
-          "items": [
-            "jQuery",
-            "Sass",
-            "CakePHP",
-            "OSCommerce",
-            "CMS Made Simple",
-            "PhoneGap"
-          ] },
-        { "type": "Applications",
-          "items": [
-            "GIT",
-            "Adobe Photoshop",
-            "Fireworks",
-            "GIMP (GNU Image Manipulation Program)"
-          ] }
-    ] };
-  </script>
  </head>
  <body>
 
@@ -143,16 +90,11 @@
  <thead><tr><th id="header">
 
    <h1 id="name">
-    <script type="text/javascript">document.write(author);</script>
+    Jeremie J. Jarosh
    </h1>
    <div id="info">
     <div id="test" style="margin-top:1em;">
-     <script type="text/javascript">
-        document.write(addressStreet+" &mdash; ");
-        document.write(addressCity+" &mdash; ");
-        document.write(phone+" &mdash; ");
-        document.write(email);
-     </script>
+     3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; Jeremie@Jarosh.org
     </div>
    </div>
 
@@ -163,37 +105,50 @@
    <!-- use more table headers in case articles flow to next page -->
    <thead><tr><th class="header">Education</th></tr></thead>
    <tbody><tr><td class="section">
-    <script type="text/javascript">
-     for( var i = 0; i < education.schools.length; i++ ) {
-        document.write( "<p class=\"item\">" );
-        document.write( "<span class=\"edu-name\">"
-                        +education.schools[i].certificate+"</span>, " );
-        document.write( education.schools[i].gradDate+"<br>" );
-        document.write( education.schools[i].school+", " );
-        document.write( education.schools[i].location );
-        document.write( "</p>" );
-     }
-    </script>
+    <p class="item">
+     <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
+     Minnesota School of Business, Plymouth, MN
+    </p>
    </td></tr></tbody>
   </table>
 
   <table id="technical" class="article indent">
    <thead><tr><th class="header">Technical Skills</th></tr></thead>
    <tbody><tr><td class="section">
-    <script type="text/javascript">
-     for( var i = 0; i < technical.skillz.length; i++ ) {
-        document.write( "<p class=\"item\">" );
-        document.write( "<span class=\"tech-name\">"
-                        +technical.skillz[i].type+"</span> &mdash; " );
-        var list = "";
-        for( j in technical.skillz[i].items ) {
-            var span = ", <span style=\"white-space:nowrap;\">"
-            list = list+span+technical.skillz[i].items[j]+"</span>";
-        }
-        document.write( list.substring(2) );
-        document.write( "</p>" );
-     }
-    </script>
+    <p class="item">
+     <span class="tech-name">Languages</span> &mdash;
+     <span style="white-space:nowrap;">HTML</span>,
+     <span style="white-space:nowrap;">CSS</span>,
+     <span style="white-space:nowrap;">JavaScript</span>,
+     <span style="white-space:nowrap;">PHP</span>,
+     <span style="white-space:nowrap;">MySQL</span>,
+     <span style="white-space:nowrap;">Bash (Shell Scripting)</span>,
+     <span style="white-space:nowrap;">Python</span>,
+     <span style="white-space:nowrap;">Java</span>
+    </p>
+    <p class="item">
+     <span class="tech-name">Concepts</span> &mdash;
+     <span style="white-space:nowrap;">Responsive design/Mobile Development</span>,
+     <span style="white-space:nowrap;">AJAX</span>,
+     <span style="white-space:nowrap;">Version Control</span>,
+     <span style="white-space:nowrap;">MVC (Model-view-controller)</span>
+    </p>
+    <p class="item">
+     <span class="tech-name">Frameworks</span> &mdash;
+     <span style="white-space:nowrap;">jQuery</span>,
+     <span style="white-space:nowrap;">Sass</span>,
+     <span style="white-space:nowrap;">CakePHP</span>,
+     <span style="white-space:nowrap;">OSCommerce</span>,
+     <span style="white-space:nowrap;">CMS Made Simple</span>,
+     <span style="white-space:nowrap;">PhoneGap</span>
+    </p>
+    <p class="item">
+     <span class="tech-name">Applications</span> &mdash;
+     <span style="white-space:nowrap;">GIT</span>,
+     <span style="white-space:nowrap;">Adobe Photoshop</span>,
+     <span style="white-space:nowrap;">Fireworks</span>,
+     <span style="white-space:nowrap;">GIMP (GNU Image Manipulation Program)</span>
+    </p>
    </td></tr></tbody>
   </table>
 
