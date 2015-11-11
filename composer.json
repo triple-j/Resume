@@ -1,0 +1,15 @@
+{
+    "name": "trejeraos/resume",
+    "description": "Personal Resume for Jeremie J. Jarosh",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremie Jarosh",
+            "email": "jeremie@jarosh.org"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^6.0"
+    }
+}
