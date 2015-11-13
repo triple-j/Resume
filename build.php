@@ -26,7 +26,7 @@ echo "Rendering PDF..." . PHP_EOL;
 file_put_contents($filepathHTML, $html);
 
 // render PDF
-$mpdf=new mPDF();
+$mpdf=new mPDF('utf-8', 'Letter');
 $mpdf->WriteHTML($html);
 $mpdf->Output($filepathPDF, 'F');
 
