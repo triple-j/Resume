@@ -128,7 +128,7 @@
      which features they want the script to have before downloading and installing it.
     </p>
     <p class="item">
-     <span class="name">Personal Blog/Website</span> &mdash; triplejweb.developer.se <br />
+     <span class="name">Personal Blog/Website</span> &mdash; trejeraos.com <br />
      Currently this site is in its infancy.  I plan on using it to chronicle my adventures in
      programming, Linux, and everything else.
     </p>
