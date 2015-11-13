@@ -4,9 +4,10 @@ require(__DIR__ . "/vendor/autoload.php");
 define('_MPDF_TEMP_PATH', "./tmp/");
 define('_MPDF_TTFONTDATAPATH', "./tmp/");
 
+$filebasename = "resume-jeremie_jarosh";
 $outputDir    = __DIR__ . "/output/";
-$filepathPDF  = $outputDir . "resume.pdf";
-$filepathHTML = $outputDir . "resume.html";
+$filepathPDF  = $outputDir . $filebasename . ".pdf";
+$filepathHTML = $outputDir . $filebasename . ".html";
 
 // make output and temporary directories
 if (!is_dir(_MPDF_TEMP_PATH)) {
