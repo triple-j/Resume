@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
@@ -10,36 +9,32 @@
  </head>
  <body>
 
-<table>
- <!-- using table header to make page header when printed -->
- <thead><tr><th id="header">
-
-   <h1 id="name">
-    Jeremie J. Jarosh
-   </h1>
-   <div id="info">
-    <div id="test" style="margin-top:1em;">
-     3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; Jeremie@Jarosh.org
+  <section id="header">
+    <h1 id="name">
+     Jeremie J. Jarosh
+    </h1>
+    <div id="info">
+     <div id="test" style="margin-top:1em;">
+      3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; Jeremie@Jarosh.org
+     </div>
     </div>
-   </div>
+  </section>
+ 
 
- </th></tr></thead>
- <tbody><tr><td>
-
-  <table id="education" class="article">
-   <!-- use more table headers in case articles flow to next page -->
-   <thead><tr><th class="header">Education</th></tr></thead>
-   <tbody><tr><td class="section">
+  <section id="education" class="article">
+   <header><h2 class="header">Education</h2></header>
+   <div class="section">
     <p class="item">
      <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
      Minnesota School of Business, Plymouth, MN
     </p>
-   </td></tr></tbody>
-  </table>
+   </div>
+  </section>
+  
 
-  <table id="technical" class="article indent">
-   <thead><tr><th class="header">Technical Skills</th></tr></thead>
-   <tbody><tr><td class="section">
+  <section id="technical" class="article indent">
+   <header><h2 class="header">Technical Skills</h2></header>
+   <div class="section">
     <p class="item">
      <span class="tech-name">Languages</span> &mdash;
      <span style="white-space:nowrap;">HTML</span>,
@@ -74,12 +69,13 @@
      <span style="white-space:nowrap;">Fireworks</span>,
      <span style="white-space:nowrap;">GIMP (GNU Image Manipulation Program)</span>
     </p>
-   </td></tr></tbody>
-  </table>
+   </div>
+  </section>
 
-  <table id="employment" class="article">
-   <thead><tr><th class="header">Employment</th></tr></thead>
-   <tbody><tr><td class="section">
+
+  <section id="employment" class="article">
+   <header><h2 class="header">Employment</h2></header>
+   <div class="section">
     <div class="item">
      <p>
       <span class="employ-date">December 2011 - Present</span>
@@ -115,12 +111,13 @@
      </ul>
     </div>
 
-   </td></tr></tbody>
-  </table>
+   </div>
+  </section>
 
-  <table id="personal" class="article indent">
-   <thead><tr><th class="header">Personal Projects</th></tr></thead>
-   <tbody><tr><td class="section">
+
+  <section id="personal" class="article indent">
+   <header><h2 class="header">Personal Projects</h2></header>
+   <div class="section">
     <p class="item">
      <span class="name">Heavy<em>er</em>Ink</span> &mdash; heavyerink.appspot.com <br />
      It is a third-party Userscript(aka. Greasemonkey Script) modification for the HeavyInk.com
@@ -135,11 +132,8 @@
      Currently this site is in its infancy.  I plan on using it to chronicle my adventures in
      programming, Linux, and everything else.
     </p>
-   </td></tr></tbody>
-  </table>
-
- </td></tr></tbody>
-</table>
+   </div>
+  </section>
 
  </body>
 </html>
