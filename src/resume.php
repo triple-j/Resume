@@ -67,7 +67,7 @@
    <div class="section">
     <div class="item">
      <p>
-      <span class="employ-date">December 2011 - September 2015</span>
+      <span class="employ-date">2011 - 2015</span>
       <span class="employ-name">Ecreativeworks</span>, Plymouth, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>
@@ -85,7 +85,7 @@
 
     <div class="item">
      <p>
-      <span class="employ-date">January 2010 - October 2010</span>
+      <span class="employ-date">2010</span>
       <span class="employ-name">Travelers Country Club #1</span>, Clear Lake, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>
