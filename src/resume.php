@@ -129,7 +129,7 @@
    <header><h2 class="header">Education</h2></header>
    <div class="section">
     <p class="item">
-     <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
+     <span class="edu-name">A.A.S. Programming and Game Development</span><br />
      Minnesota School of Business, Plymouth, MN
     </p>
    </div>
