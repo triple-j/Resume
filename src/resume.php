@@ -19,17 +19,6 @@
      </div>
     </div>
   </section>
- 
-
-  <section id="education" class="article">
-   <header><h2 class="header">Education</h2></header>
-   <div class="section">
-    <p class="item">
-     <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
-     Minnesota School of Business, Plymouth, MN
-    </p>
-   </div>
-  </section>
   
 
   <section id="technical" class="article indent">
@@ -131,6 +120,17 @@
      <span class="name">Personal Blog/Website</span> &mdash; trejeraos.com <br />
      Currently this site is in its infancy.  I plan on using it to chronicle my adventures in
      programming, Linux, and everything else.
+    </p>
+   </div>
+  </section>
+ 
+
+  <section id="education" class="article">
+   <header><h2 class="header">Education</h2></header>
+   <div class="section">
+    <p class="item">
+     <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
+     Minnesota School of Business, Plymouth, MN
     </p>
    </div>
   </section>
