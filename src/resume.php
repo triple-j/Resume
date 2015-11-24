@@ -112,17 +112,16 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
    <div class="section">
     <p class="item">
      <span class="name">Heavy<em>er</em>Ink</span> &mdash; heavyerink.appspot.com <br />
-     It is a third-party Userscript(aka. Greasemonkey Script) modification for the HeavyInk.com
-     website.  Which is an online comic book store.  The Userscript adds features to the
-     existing site like a statistics page displaying the estimated monthly cost of upcoming
-     comics, easier login access via pop-up, and various other UI tweaks and fixes.
-     I also created an accompanying website for the Userscript where the user can customize
-     which features they want the script to have before downloading and installing it.
+     Heavy<em>er</em>Ink is a third-party Userscript(aka. Greasemonkey Script) modification for
+     the HeavyInk.com website, an online comic book store.  The Userscript adds features to the
+     existing site; for example, a statistics page displaying the estimated monthly cost of
+     upcoming comics, easier login access via pop-up, and various other customizable features.
     </p>
     <p class="item">
-     <span class="name">Personal Blog/Website</span> &mdash; trejeraos.com <br />
-     Currently this site is in its infancy.  I plan on using it to chronicle my adventures in
-     programming, Linux, and everything else.
+     <span class="name">trejeraos Blog/Website</span> &mdash; trejeraos.com <br />
+     The trejeraos blog/website in powered by a Debian based Linux server that I setup and
+     maintain.  It is used to chronicle my adventures in programming, Linux, and everything
+     else.
     </p>
    </div>
   </section>
