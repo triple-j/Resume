@@ -66,7 +66,7 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
 
 
   <section id="employment" class="article">
-   <header><h2 class="header">Employment</h2></header>
+   <header><h2 class="header">Professional Experience</h2></header>
    <div class="section">
     <div class="item">
      <div class="employ-date">2011 - 2015</div>
@@ -108,7 +108,7 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
 
 
   <section id="personal" class="article indent">
-   <header><h2 class="header">Personal Projects</h2></header>
+   <header><h2 class="header">Other Relevant Experience</h2></header>
    <div class="section">
     <p class="item">
      <span class="name">Heavy<em>er</em>Ink</span> &mdash; heavyerink.appspot.com <br />
