@@ -4,7 +4,10 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
   <title>Jeremie J. Jarosh's Resume</title>
   <style type="text/css">
-<?php echo file_get_contents(__DIR__ . "/style.css") . PHP_EOL; ?>
+<?php 
+echo file_get_contents(__DIR__ . "/style.css") . PHP_EOL; 
+echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL; 
+?>
   </style>
  </head>
  <body>
@@ -66,8 +69,8 @@
    <header><h2 class="header">Employment</h2></header>
    <div class="section">
     <div class="item">
+     <div class="employ-date">2011 - 2015</div>
      <p>
-      <span class="employ-date">2011 - 2015</span>
       <span class="employ-name">Ecreativeworks</span>, Plymouth, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>
@@ -84,8 +87,8 @@
     </div>
 
     <div class="item">
+     <div class="employ-date">2010</div>
      <p>
-      <span class="employ-date">2010</span>
       <span class="employ-name">Travelers Country Club #1</span>, Clear Lake, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>

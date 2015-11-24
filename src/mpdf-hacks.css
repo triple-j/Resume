@@ -1,0 +1,6 @@
+
+    .employ-date {
+        display: block;
+        width: 6em;         /* mpdf requires floated elements to have a width */
+        text-align: right;
+    }
