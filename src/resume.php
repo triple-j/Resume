@@ -75,12 +75,12 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
       <span class="employ-job">Web Developer</span>
      </p>
      <ul>
-      <li>Built multiple websites using OSCommerce and CMS Made Simple as well as a few fully
-       custom sites/apps</li>
+      <li>Built multiple (25+) websites using OSCommerce and CMS Made Simple as well as a few
+       (3+) fully custom sites/apps</li>
       <li>Maintained the company's customized version of OSCommerce</li>
       <li>Improved and created internal programs to streamline development</li>
-      <li>Facilitated the use of GIT to track changes to sites and insure the developers
-       were working on code identical to what was on the live servers</li>
+      <li>Facilitated the use of GIT to track changes to sites which would ensure that
+       developers were working on code identical to what was on the live servers</li>
       <li>Formalized the creation of commonly used modules like FAQS, Slideshows, and News Pages
        to make their insertion into websites quicker and hassle free</li>
      </ul>
@@ -94,12 +94,12 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
      </p>
      <ul>
       <li>Redesigned the website's layout and graphics</li>
-      <li>Rebuilt their website from the ground up, not including content, to be a limited CMS
+      <li>Rebuilt the website from the ground up, not including content, to be a limited CMS
        by utilizing CakePHP (think Ruby-on-Rails but for PHP)</li>
-      <li>Created a log-in system that allows modification access to pages based on individual
-       user permissions</li>
-      <li>Built an importer and exporter for their Members Address/Phone Directory that could
-       be used with the legacy program they rely on to maintain their Members Directory</li>
+      <li>Created a log-in system that controls modification access to pages based on
+       individual user permissions</li>
+      <li>Built an importer and exporter for the Members Address/Phone Directory for use with
+       the legacy program used to maintain the Members Directory</li>
      </ul>
     </div>
 
