@@ -13,6 +13,15 @@
         font-family:    "FreeSerif","Times New Roman",
                         "Nimbus Roman No9 L",Times,Serif;
     }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    a:focus,
+    a:hover {
+        text-decoration: underline;
+    }
 
     /* set up formating */
     #header {
@@ -81,6 +90,12 @@
     /* used to keep items from splitting between pages */
     /*#employment .item:last-of-type { page-break-before:always; }*/
 
+
+    .employ-date {
+        display: block;
+        width: 6em;         /* mpdf requires floated elements to have a width */
+        text-align: right;
+    }
   </style>
  </head>
  <body>
@@ -91,20 +106,8 @@
     </h1>
     <div id="info">
      <div id="test" style="margin-top:1em;">
-      3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; Jeremie@Jarosh.org
-     </div>
+      3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; <a href="mailto&#x3a;Je%&#55;2e&#109;%69&#101;&#64;%4a%61&#x72;%6f&#115;h&#46;&#x25;6frg" rel="nofollow">&#74;erem&#x69;&#x65;&#64;Jar&#x6f;sh&#46;org</a>     </div>
     </div>
-  </section>
- 
-
-  <section id="education" class="article">
-   <header><h2 class="header">Education</h2></header>
-   <div class="section">
-    <p class="item">
-     <span class="edu-name">A.A.S. Programming and Game Development</span>, 2008<br />
-     Minnesota School of Business, Plymouth, MN
-    </p>
-   </div>
   </section>
   
 
@@ -150,40 +153,40 @@
 
 
   <section id="employment" class="article">
-   <header><h2 class="header">Employment</h2></header>
+   <header><h2 class="header">Professional Experience</h2></header>
    <div class="section">
     <div class="item">
+     <div class="employ-date">2011 - 2015</div>
      <p>
-      <span class="employ-date">December 2011 - September 2015</span>
       <span class="employ-name">Ecreativeworks</span>, Plymouth, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>
      <ul>
-      <li>Built multiple websites using OSCommerce and CMS Made Simple as well as a few fully
-       custom sites/apps</li>
+      <li>Built multiple (25+) websites using OSCommerce and CMS Made Simple as well as a few
+       (3+) fully custom sites/apps</li>
       <li>Maintained the company's customized version of OSCommerce</li>
       <li>Improved and created internal programs to streamline development</li>
-      <li>Facilitated the use of GIT to track changes to sites and insure the developers
-       were working on code identical to what was on the live servers</li>
+      <li>Facilitated the use of GIT to track changes to sites which would ensure that
+       developers were working on code identical to what was on the live servers</li>
       <li>Formalized the creation of commonly used modules like FAQS, Slideshows, and News Pages
        to make their insertion into websites quicker and hassle free</li>
      </ul>
     </div>
 
     <div class="item">
+     <div class="employ-date">2010</div>
      <p>
-      <span class="employ-date">January 2010 - October 2010</span>
       <span class="employ-name">Travelers Country Club #1</span>, Clear Lake, MN<br />
       <span class="employ-job">Web Developer</span>
      </p>
      <ul>
       <li>Redesigned the website's layout and graphics</li>
-      <li>Rebuilt their website from the ground up, not including content, to be a limited CMS
+      <li>Rebuilt the website from the ground up, not including content, to be a limited CMS
        by utilizing CakePHP (think Ruby-on-Rails but for PHP)</li>
-      <li>Created a log-in system that allows modification access to pages based on individual
-       user permissions</li>
-      <li>Built an importer and exporter for their Members Address/Phone Directory that could
-       be used with the legacy program they rely on to maintain their Members Directory</li>
+      <li>Created a log-in system that controls modification access to pages based on
+       individual user permissions</li>
+      <li>Built an importer and exporter for the Members Address/Phone Directory for use with
+       the legacy program used to maintain the Members Directory</li>
      </ul>
     </div>
 
@@ -192,21 +195,31 @@
 
 
   <section id="personal" class="article indent">
-   <header><h2 class="header">Personal Projects</h2></header>
+   <header><h2 class="header">Other Relevant Experience</h2></header>
    <div class="section">
     <p class="item">
-     <span class="name">Heavy<em>er</em>Ink</span> &mdash; heavyerink.appspot.com <br />
-     It is a third-party Userscript(aka. Greasemonkey Script) modification for the HeavyInk.com
-     website.  Which is an online comic book store.  The Userscript adds features to the
-     existing site like a statistics page displaying the estimated monthly cost of upcoming
-     comics, easier login access via pop-up, and various other UI tweaks and fixes.
-     I also created an accompanying website for the Userscript where the user can customize
-     which features they want the script to have before downloading and installing it.
+     <span class="name">Heavy<em>er</em>Ink</span> &mdash; <a href="http://heavyerink.appspot.com" target="_blank">heavyerink.appspot.com</a> <br />
+     Heavy<em>er</em>Ink is a third-party Userscript(aka. Greasemonkey Script) modification for
+     the HeavyInk.com website, an online comic book store.  The Userscript adds features to the
+     existing site; for example, a statistics page displaying the estimated monthly cost of
+     upcoming comics, easier login access via pop-up, and various other customizable features.
     </p>
     <p class="item">
-     <span class="name">Personal Blog/Website</span> &mdash; trejeraos.com <br />
-     Currently this site is in its infancy.  I plan on using it to chronicle my adventures in
-     programming, Linux, and everything else.
+     <span class="name">trejeraos Blog/Website</span> &mdash; <a href="http://trejeraos.com" target="_blank">trejeraos.com</a> <br />
+     The trejeraos blog/website in powered by a Debian based Linux server that I setup and
+     maintain.  It is used to chronicle my adventures in programming, Linux, and everything
+     else.
+    </p>
+   </div>
+  </section>
+ 
+
+  <section id="education" class="article">
+   <header><h2 class="header">Education</h2></header>
+   <div class="section">
+    <p class="item">
+     <span class="edu-name">A.A.S. Programming and Game Development</span><br />
+     Minnesota School of Business, Plymouth, MN
     </p>
    </div>
   </section>
