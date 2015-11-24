@@ -1,3 +1,6 @@
+<?php
+require_once(__DIR__ . "/functions.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -18,7 +21,7 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
     </h1>
     <div id="info">
      <div id="test" style="margin-top:1em;">
-      3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; Jeremie@Jarosh.org
+      3812 Toledo Avenue N. &mdash; Robbinsdale, MN 55422 &mdash; (612) 803-3747 &mdash; <?=email("Jeremie@Jarosh.org");?>
      </div>
     </div>
   </section>
@@ -111,14 +114,14 @@ echo file_get_contents(__DIR__ . "/mpdf-hacks.css") . PHP_EOL;
    <header><h2 class="header">Other Relevant Experience</h2></header>
    <div class="section">
     <p class="item">
-     <span class="name">Heavy<em>er</em>Ink</span> &mdash; heavyerink.appspot.com <br />
+     <span class="name">Heavy<em>er</em>Ink</span> &mdash; <?=alink("heavyerink.appspot.com");?> <br />
      Heavy<em>er</em>Ink is a third-party Userscript(aka. Greasemonkey Script) modification for
      the HeavyInk.com website, an online comic book store.  The Userscript adds features to the
      existing site; for example, a statistics page displaying the estimated monthly cost of
      upcoming comics, easier login access via pop-up, and various other customizable features.
     </p>
     <p class="item">
-     <span class="name">trejeraos Blog/Website</span> &mdash; trejeraos.com <br />
+     <span class="name">trejeraos Blog/Website</span> &mdash; <?=alink("trejeraos.com");?> <br />
      The trejeraos blog/website in powered by a Debian based Linux server that I setup and
      maintain.  It is used to chronicle my adventures in programming, Linux, and everything
      else.
